@@ -68,50 +68,53 @@ if ($repeatChorus > 1) {
 ?>
 
 <html>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dayglow - Listerine</title>
-    <style>
-        body {
-    margin: 0; 
-    font-family: Arial, sans-serif;
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayglow - Listerine</title>
+    <style>
+        body {
+    margin: 0; 
+    font-family: Arial, sans-serif;
 }
 
 .left-box2 {
-    width: 600px; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    background-color:#4F8FC0; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    float: center; 
-    margin: 0 auto;
+    width: 600px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    background-color:#4F8FC0; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    float: center; 
+    margin: 0 auto;
 
 }
 
 .left-box {
-    width: 600px; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    background-color:#26648E; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    float: center; 
-    margin: 0 auto;
+    width: 600px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    background-color:#26648E; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    float: center; 
+    margin: 0 auto;
 }
 
 .left-box p {
-    text-align: center; 
-    margin-bottom: 10px; 
+    text-align: center; 
+    margin-bottom: 10px; 
 }
-    </style>
-    </head>
-    <body style="background-color: #41436A;">
-        <div class="left-box">
-            
-                <h1>Title:<a href ="https://www.youtube.com/watch?v=KAKAj2cMYFk"><?php echo $title ?></a><br>
-        
-            Artist: <?php echo $artist ?></h1>
-    
+   </style>
+    </head>
+    <body style="background-color: #41436A;">
+        <div class="left-box">
+            
+        <!--
+        Print the values of title and artist by calling
+        -->
+        <h1>Title:<a href ="https://www.youtube.com/watch?v=KAKAj2cMYFk"><?php echo $title ?></a><br>
+        
+            Artist: <?php echo $artist ?></h1>
+    
 <h3><i>
 </div>
 
@@ -120,10 +123,10 @@ if ($repeatChorus > 1) {
 <?php
 //Created a loop to print the values of the array lyrics
 for ($x = 0; $x <4; $x++) {
-    echo $lyrics[$x]. " <br><br>";    
+    echo $lyrics[$x]. " <br><br>"; 
 }
-    echo $preChorus. " <br><br>";
-    echo $chorus. " <br><br>";
+    echo $preChorus. " <br><br>";
+    echo $chorus. " <br><br>";
 ?>
 </i>
 </h3>
